@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:WpfApp3"
         mc:Ignorable="d"
         Title="Werknemer" 
-        Height="700" 
-        Width="800"
+        Height="750" 
+        Width="1024"
         Background="Black" 
         WindowStyle="None" 
         MouseDown="Grid_MouseDown">
@@ -15,10 +15,10 @@
         <Grid>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="94*"/>
-                <ColumnDefinition Width="131*"/>
-                <ColumnDefinition Width="57*"/>
-                <ColumnDefinition Width="94*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -29,12 +29,12 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Label  Padding="10" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center" Margin="10" Grid.Column="0" Grid.Row="0" Name="lblAchternaam" Content="Achternaam:" FontFamily="Courier New" FontSize="16">
+            <Label  Padding="20" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center" Margin="10" Grid.Column="0" Grid.Row="0" Name="lblAchternaam" Content="Achternaam:" FontFamily="Courier New" FontSize="16">
                 <Label.Effect>
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </Label.Effect>
             </Label>
-            <TextBox Padding="10" Margin="10" Grid.Column="1" Grid.Row="0" Name="txtAchternaam" FontFamily="Courier New" Grid.ColumnSpan="2">
+            <TextBox Padding="20" Margin="10" Grid.Column="1" Grid.Row="0" Name="txtAchternaam" FontFamily="Courier New" Grid.ColumnSpan="2" FontSize="16">
                 <TextBox.Background>
                     <SolidColorBrush Color="Beige"/>
                 </TextBox.Background>
@@ -42,17 +42,19 @@
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </TextBox.Effect>
             </TextBox>
-            <Button FontSize="16" Padding="10" FontWeight="Bold" Margin="10" Grid.Column="3" Name="btnToevoegen" Content="Toevoegen" Cursor="Hand" Click="btnToevoegen_Click" FontFamily="Courier New" >
+            <Button FontSize="16" Padding="20" FontWeight="Bold" Margin="10" Grid.Column="3" Name="btnToevoegen" Content="Toevoegen" Cursor="Hand" Click="btnToevoegen_Click" FontFamily="Courier New" >
                 <Button.Effect>
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </Button.Effect>
             </Button>
-            <Label Padding="10" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center" Margin="10" Grid.Row="1" Grid.Column="0" Name="lblVoornaam" Content="Voornaam:" FontFamily="Courier New" FontSize="16">
+
+
+            <Label Padding="20" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center" Margin="10" Grid.Row="1" Grid.Column="0" Name="lblVoornaam" Content="Voornaam:" FontFamily="Courier New" FontSize="16">
                 <Label.Effect>
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </Label.Effect>
             </Label>
-            <TextBox  Padding="10" Margin="10" Grid.Column="1" Grid.Row="1" Name="txtVoornaam" FontFamily="Courier New" Grid.ColumnSpan="2">
+            <TextBox  Padding="20" Margin="10" Grid.Column="1" Grid.Row="1" Name="txtVoornaam" FontFamily="Courier New" Grid.ColumnSpan="2" FontSize="16">
                 <TextBox.Background>
                     <SolidColorBrush Color="Beige"/>
                 </TextBox.Background>
@@ -60,17 +62,14 @@
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </TextBox.Effect>
             </TextBox>
-            <Button FontSize="16" Padding="10" FontWeight="Bold" Margin="10" Grid.Row="4" Grid.Column="3" Name="btnExit" Content="Exit" Cursor="Hand"  FontFamily="Courier New" Click="btnExit_Click" >
-                <Button.Effect>
-                    <DropShadowEffect Color="#FF00DCFF"/>
-                </Button.Effect>
-            </Button>
-            <Label Padding="10" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center"  Margin="10" Grid.Column="0"  Grid.Row="2" Name="lblVerdiensten" Content="Verdiensten:" FontFamily="Courier New" FontSize="16" >
+
+
+            <Label Padding="20" Foreground="White" FontWeight="Bold" HorizontalContentAlignment="Center"  Margin="10" Grid.Column="0"  Grid.Row="2" Name="lblVerdiensten" Content="Verdiensten:" FontFamily="Courier New" FontSize="16" >
                 <Label.Effect>
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </Label.Effect>
             </Label>
-            <TextBox  Padding="10" Margin="10" Grid.Column="1" Grid.Row="2"  Name="txtVerdiensten" FontFamily="Courier New" Grid.ColumnSpan="2">
+            <TextBox  Padding="20" Margin="10" Grid.Column="1" Grid.Row="2"  Name="txtVerdiensten" FontFamily="Courier New" Grid.ColumnSpan="2" FontSize="16">
                 <TextBox.Background>
                     <SolidColorBrush Color="Beige"/>
                 </TextBox.Background>
@@ -78,11 +77,20 @@
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </TextBox.Effect>
             </TextBox>
+
+
             <TextBox IsReadOnly="true" Background="Beige" Padding="10" FontWeight="DemiBold" Name="txtResult" TextWrapping="Wrap" AcceptsReturn="true" VerticalScrollBarVisibility="Visible" Margin="10" Grid.Row="3" Grid.ColumnSpan="4" FontFamily="Courier New">
                 <TextBox.Effect>
                     <DropShadowEffect Color="#FF00DCFF"/>
                 </TextBox.Effect>
             </TextBox>
+
+
+            <Button FontSize="16" Padding="20" FontWeight="Bold" Margin="10" Grid.Row="4" Grid.Column="3" Name="btnExit" Content="Exit" Cursor="Hand"  FontFamily="Courier New" Click="btnExit_Click" >
+                <Button.Effect>
+                    <DropShadowEffect Color="#FF00DCFF"/>
+                </Button.Effect>
+            </Button>
 
         </Grid>
     </StackPanel>
